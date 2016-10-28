@@ -3,7 +3,7 @@
 (Inspired from vim-go-ide, copy-paste-programming, doesn't change default vim config)
 
 - Install rust
-- Install rustup
+- Install [rustup](https://www.rustup.rs/)
 - Install racer and create a symlink to /usr/local/bin, `cargo install racer && ln -s <install_binary_file_location> /usr/local/bin/racer`
 - After installing rustup, follow the `racer` configuring instructions [here](https://github.com/phildawes/racer#configuration)
 - `git clone <url> ~/.vim_rust_runtime`
