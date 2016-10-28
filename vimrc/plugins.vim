@@ -138,6 +138,9 @@ au FileType rust compiler cargo
 " rust autoformat on save
 "autocmd BufNewFile,BufRead *.rs set formatprg=rustfmt
 
+" silence the -Z warning from rustc in rust.vim
+let g:syntastic_quiet_messages = {"regex": 'is unstable and should only be used on the nightly compiler, but it is currently accepted for backwards compatibility; this will soon change, see issue #31847 for more details'}
+
 " racer
 let g:racer_cmd = "/usr/local/bin/racer"
 let $RUST_SRC_PATH="~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/"

@@ -1,6 +1,6 @@
 # vim-rust-ide
 
-(Inspired heavily by vim-go-ide, copy-paste-programming)
+(Inspired from vim-go-ide, copy-paste-programming, doesn't change default vim config)
 
 - Install rust
 - Install rustup
