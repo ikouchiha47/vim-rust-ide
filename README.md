@@ -16,7 +16,7 @@ Or make a file `vim-rust`
 
 ```
 #!/usr/bin/env bash
-vim -u ~/.vimrc.rc
+vim -u ~/.vimrc.rust
 ```
 Move the file to `/usr/local/bin` and  `chmod +x /usr/local/bin/vim-rust`
 
