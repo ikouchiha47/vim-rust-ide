@@ -17,7 +17,20 @@ Or make a file `vim-rust`
 vim -u ~/.vimrc.rc
 ```
 Move the file to `/usr/local/bin` and  `chmod +x /usr/local/bin/vim-rust`
+
+####Plugins used
+- pathogen
+- neocomplete
+- NERDtree
+- rust.vim
+- vim-racer
+- syntastic
+- neo(*)
+- auto-pairs
+- bufexplorer
+- vim-gitgutter
  
-TODO:
+####TODO:
 - Strip away not required stuff
 - Make a minimal and a maximal configuration
+
