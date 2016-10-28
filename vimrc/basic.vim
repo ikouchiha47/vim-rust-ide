@@ -180,7 +180,7 @@ set noswapfile
 " /20  - remember 20 items in search history
 " %    - remember the buffer list (if vim started without a file arg)
 " n    - set name of viminfo file
-set viminfo='20,\"50,:20,/20,%,n~/.viminfo.go
+set viminfo='20,\"50,:20,/20,%,n~/.viminfo.rust
 
 " Define what to save with :mksession
 " blank - empty windows
@@ -329,9 +329,7 @@ func! DeleteTrailingWS()
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
-autocmd BufWrite *.go :call DeleteTrailingWS()
-autocmd BufWrite *.py :call DeleteTrailingWS()
-autocmd BufWrite *.coffee :call DeleteTrailingWS()
+autocmd BufWrite *.rust :call DeleteTrailingWS()
 
 " visual shifting (does not exit Visual mode)
 vnoremap < <gv

@@ -122,7 +122,7 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 "if !exists('g:neocomplete#sources#omni#input_patterns')
 "  let g:neocomplete#sources#omni#input_patterns = {}
 "endif
-"let g:neocomplete#force_omni_input_patterns.go = '[^.[:digit:] *\t]\.'
+
 if !exists('g:neocomplete#force_omni_input_patterns')
   let g:neocomplete#force_omni_input_patterns = {}
 endif
@@ -135,6 +135,8 @@ let g:neocomplete#force_omni_input_patterns.rust = '[^.[:digit:] *\t]\%(\.\|\::\
 
 " rust.vim
 au FileType rust compiler cargo
+" rust autoformat on save
+"autocmd BufNewFile,BufRead *.rs set formatprg=rustfmt
 
 " racer
 let g:racer_cmd = "/usr/local/bin/racer"
